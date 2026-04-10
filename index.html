@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Uniqlo Style</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fff;
+      }
+
+      header {
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+      }
+
+      .logo {
+        font-weight: bold;
+        color: red;
+        font-size: 24px;
+      }
+
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+
+      .hero {
+        background: url('https://picsum.photos/1200/400') center/cover no-repeat;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      .products {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+      }
+
+      .product {
+        border: 1px solid #eee;
+        padding: 10px;
+        text-align: center;
+        transition: transform 0.2s;
+      }
+
+      .product:hover {
+        transform: scale(1.03);
+      }
+
+      .product img {
+        width: 50%;
+        height: 350px;
+        object-fit: cover;
+      }
+
+      .product h3 {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+
+      footer {
+        background-color: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Mist.Co</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Sale</a>
+      </nav>
+    </header>
+
+    <section class="hero">Koleksi Terbaru</section>
+
+    <section class="products">
+      <div class="product">
+        <img src="kaos.jpg" alt="" />
+        <h3>T-Shirt Basic</h3>
+        <p>Rp 99.000</p>
+      </div>
+
+      <div class="product">
+        <img src="jaket.jpg" alt="" />
+        <h3>Jaket Casual</h3>
+        <p>Rp 199.000</p>
+      </div>
+
+      <div class="product">
+        <img src="jeans.jpg" alt="" />
+        <h3>Celana Jeans</h3>
+        <p>Rp 249.000</p>
+      </div>
+
+      <div class="product">
+        <img src="hoodie.jpg" alt="" />
+        <h3>Hoodie</h3>
+        <p>Rp 179.000</p>
+      </div>
+    </section>
+
+    <footer>&copy; 2026 Mist.Co. All rights reserved.</footer>
+  </body>
+</html>
